@@ -1,5 +1,6 @@
 body {
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -12,13 +13,13 @@ body {
 }
 
 .sidebar__navigation {
-    background-color: #121212;
+    background-color: var(--color-bg);
     border-radius: 8px;
     /* padding: 16px 0 0 16px; */
 }
 
 .logo {
-    background: #121212;
+    background: var(--color-bg);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -38,17 +39,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #B3B3B3;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-
-    font-family: "DM Sans", sans-serif;
 }
 
 .library {
-    background-color: #121212;
-    color: #B3B3B3;
+    background-color: var(--color-bg);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 14px;
     border-radius: 8px;
@@ -67,10 +66,9 @@ nav ul li a {
 .library__button {
     display: flex;
     margin-right: 10px;
-    color: #B3B3B3;
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     background-color: transparent;
     border: 0;
     text-align: center;
@@ -96,7 +94,7 @@ nav ul li a {
     justify-content: space-between;
     gap: 20px;
     background-color: #242424;
-    color: #B3B3B3;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0px;
@@ -112,7 +110,6 @@ nav ul li a {
 .section-playlist__content .text {
     padding-bottom: 14px;
     color: #FFF;
-    font-family: "DM sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -133,7 +130,7 @@ nav ul li a {
     border: 0;
     font-size: 12px;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-montserrat);
     text-decoration: none;
     padding: 10px;
     margin-top: 12px;
@@ -151,10 +148,9 @@ nav ul li a {
 }
 
 .sidebar .cookies a {
-    color: #B3B3B3;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 10px;
-    font-family: "DM Sans", sans-serif;
     font-weight: 500;
 }
 
@@ -171,6 +167,53 @@ nav ul li a {
     cursor: pointer;
     align-items: center;
     width: 170px;
-    margin: 8px;
-    padding: 8px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.disclaimer-premium {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right, #AE2896, #509BF5);
+    padding: 15px 40px;
+}
+
+.disclaimer-premium .text {
+    color: #FFF;
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #FFF;
+    color: #000;
+    font-family: var(--font-arial);
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 40px;
+    padding: 14px 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    transition: transform 0.3s;
+}
+
+.disclaimer-premium button:hover {
+    transform: scale(1.1);
 }
